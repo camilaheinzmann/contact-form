@@ -23,3 +23,7 @@ $("#staticform").submit(function (event) {
     },
   });
 });
+
+$(".title-form div").click(function () {
+  $("body").toggleClass("dark-mode");
+});

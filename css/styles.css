@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color 0.2s;
 }
 
 body {
@@ -12,10 +13,13 @@ body {
 
 h1,
 p {
-  margin-bottom: 20px;
   font-family: Nunito, sans-serif;
   font-weight: bold;
   text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 h1,
@@ -73,6 +77,80 @@ p {
   transition: background-color 0.2s;
 }
 
-.submit-button:hover {
+.submit-button:hover,
+body.dark-mode .submit-button:hover {
   background-color: #e4b363;
+}
+
+.title-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title-form div {
+  width: 50px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  border: 2px solid #000;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2px;
+}
+
+.title-form div span {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #000;
+  cursor: pointer;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #000;
+  color: #ddd;
+}
+
+body.dark-mode #staticform {
+  background-color: #333;
+}
+
+body.dark-mode form,
+body.dark-mode input,
+body.dark-mode textarea {
+  border: 1px solid #444;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background: #555;
+  color: #fff;
+}
+
+body.dark-mode .submit-button {
+  background-color: #008080;
+}
+
+body.dark-mode ::-webkit-input-placeholder {
+  color: #fff;
+}
+body.dark-mode :-moz-placeholder {
+  color: #fff;
+}
+body.dark-mode ::-moz-placeholder {
+  color: #fff;
+}
+body.dark-mode :-ms-input-placeholder {
+  color: #fff;
+}
+
+body.dark-mode .title-form div {
+  justify-content: flex-end;
+  background-color: #444;
 }
