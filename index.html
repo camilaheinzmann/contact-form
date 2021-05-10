@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <title>Contato</title>
+</head>
+
+<body>
+  <form id="staticform">
+    <h1>Contato</h1>
+    <input type="hidden" name="accessKey" value="24d26de2-7e50-4d4a-8397-f6a914d91d20">
+    <input type="hidden" name="subject" value="Novo e-mail de contato">
+
+    <input type="text" name="name" placeholder="Nome" required />
+    <input type="email" name="email" placeholder="E-mail" required />
+    <textarea placeholder="Mensagem" name="message" rows="5"></textarea>
+    <p class="response-status"></p>
+
+    <input class="submit-button" type="submit" value="Enviar" />
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
